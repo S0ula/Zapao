@@ -1,0 +1,190 @@
+/* General Styles */
+body {
+  font-family: "Orbitron", sans-serif; /* Futuristic font */
+  background: linear-gradient(
+    135deg,
+    #0f0c29,
+    #302b63,
+    #24243e
+  ); /* Dark gradient */
+  color: #e0e0e0; /* Light gray text for readability */
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 30px;
+  background: linear-gradient(90deg, #00d2ff, #3a7bd5); /* Neon gradient */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0 0 10px rgba(0, 210, 255, 0.7); /* Neon glow */
+}
+
+/* Card Styles */
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.crypto-card {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  padding: 20px;
+  width: 220px;
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px); /* Frosted glass effect */
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.crypto-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 210, 255, 0.4); /* Neon glow on hover */
+}
+
+.crypto-card h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #00d2ff; /* Neon blue */
+}
+
+.crypto-card p {
+  font-size: 1rem;
+  margin: 5px 0;
+  color: #e0e0e0; /* Light gray text */
+}
+
+.crypto-card img {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 10px;
+}
+
+/* Graph Container */
+.graph-container {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  padding: 20px;
+  margin-top: 20px;
+  backdrop-filter: blur(10px); /* Frosted glass effect */
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Evaluation and Suggestions */
+.evaluation,
+.suggestions {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  padding: 20px;
+  margin-top: 20px;
+  backdrop-filter: blur(10px); /* Frosted glass effect */
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.evaluation h2,
+.suggestions h2 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+  color: #00d2ff; /* Neon blue */
+}
+
+.evaluation p,
+.suggestions ul {
+  font-size: 1rem;
+  color: #e0e0e0; /* Light gray text */
+}
+
+.suggestions ul {
+  list-style: none;
+  padding: 0;
+}
+
+.suggestions ul li {
+  margin: 10px 0;
+  padding: 10px;
+  background: rgba(0, 210, 255, 0.1);
+  border-radius: 5px;
+  transition: background 0.3s ease;
+}
+
+.suggestions ul li:hover {
+  background: rgba(0, 210, 255, 0.2);
+}
+
+/* Back Button */
+.back-button {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background: linear-gradient(90deg, #00d2ff, #3a7bd5); /* Neon gradient */
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.back-button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(0, 210, 255, 0.4); /* Neon glow on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  .crypto-card {
+    width: 100%;
+  }
+}
+
+/* Scam Evaluation Styles */
+.evaluation {
+  text-align: center;
+  padding: 30px;
+  border-radius: 15px;
+  margin-top: 30px;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.evaluation h2 {
+  font-size: 2.5rem; /* Bigger text */
+  margin-bottom: 20px;
+  color: #00d2ff; /* Neon blue */
+}
+
+.evaluation p {
+  font-size: 2rem; /* Bigger text */
+  font-weight: bold;
+  margin: 0;
+  padding: 10px;
+  border-radius: 10px;
+  display: inline-block;
+}
+
+/* Green for low risk */
+.evaluation .low-risk {
+  color: #00ff00; /* Bright green */
+  text-shadow: 0 0 10px rgba(0, 255, 0, 0.7); /* Neon glow */
+}
+
+/* Red for high risk */
+.evaluation .high-risk {
+  color: #ff0000; /* Bright red */
+  text-shadow: 0 0 10px rgba(255, 0, 0, 0.7); /* Neon glow */
+}

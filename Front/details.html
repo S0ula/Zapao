@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Crypto Details</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <h1 id="crypto-name">Crypto Details</h1>
+      <div class="graph-container">
+        <canvas id="transaction-graph" width="400" height="200"></canvas>
+      </div>
+      <div id="scam-evaluation" class="evaluation">
+        <!-- Scam evaluation will be dynamically inserted here -->
+      </div>
+      <div id="suggestions" class="suggestions">
+        <!-- Investment suggestions will be dynamically inserted here -->
+      </div>
+      <a href="index.html" class="back-button">Back to Home</a>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="js/model.js"></script>
+    <script src="js/view.js"></script>
+    <script src="js/controller.js"></script>
+  </body>
+</html>
